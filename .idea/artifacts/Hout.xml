@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="Hout">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hout</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="includeSystemProGuardCfgFile" value="true" />
+        <option name="keyAlias" value="Hout" />
+        <option name="keyPassword" value="ZHJhZ29u" />
+        <option name="keyStorePassword" value="ZHJhZ29u" />
+        <option name="keyStoreUrl" value="file://$USER_HOME$/HoutKeyStore" />
+        <option name="proGuardCfgFileUrl" value="file://$PROJECT_DIR$/proguard-project.txt" />
+        <option name="runProGuard" value="true" />
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="Hout.apk">
+      <element id="android-final-package" facet="Hout/android/Android" />
+    </root>
+  </artifact>
+</component>

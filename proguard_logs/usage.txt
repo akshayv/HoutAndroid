@@ -1,0 +1,35 @@
+com.hout.HoutMobile.BuildConfig
+com.hout.HoutMobile.R
+com.hout.HoutMobile.R$attr
+com.hout.HoutMobile.R$drawable
+com.hout.HoutMobile.R$id
+com.hout.HoutMobile.R$layout
+com.hout.HoutMobile.R$string
+com.hout.api.mock.ClientApiMock
+com.hout.api.mock.ClientApiMock$1
+com.hout.business.impl.UserServiceImpl:
+    private static final java.lang.String CONTEXT_PROPERTY
+    private static final java.lang.String USERID_CONTEXT_PROPERTY
+    private static final java.lang.String USER_APIKEY_CONTEXT_PROPERTY
+    private static final java.lang.String USER_NAME_CONTEXT_PROPERTY
+    32:32:public void createUser()
+com.hout.domain.entities.Meetup:
+    25:34:public Meetup(long,java.lang.String,java.util.Date,com.hout.domain.entities.Venue,java.util.Date,boolean,boolean,boolean)
+com.hout.domain.entities.Notification:
+    22:24:public Notification(java.lang.String)
+com.hout.domain.entities.Suggestion:
+    32:35:public Suggestion(com.hout.domain.entities.Venue,java.util.Date)
+    68:68:public long getSuggestedUserId()
+    96:97:public void setAcceptedUserIds(java.util.Set)
+    104:105:public void setUndecidedUserIds(java.util.Set)
+    112:113:public void setRejectedUserIds(java.util.Set)
+com.hout.domain.entities.User:
+    60:60:public long getContactNumber()
+com.hout.domain.entities.Venue:
+    21:24:public Venue(java.lang.String,java.lang.String)
+com.hout.integration.ServerIntegration:
+    public abstract boolean declineMeetupOnServer(long,java.lang.String,long)
+    public abstract boolean addInviteesToMeetupOnServer(long,java.lang.String,java.util.Set,long)
+com.hout.integration.impl.ServerIntegrationImpl:
+    245:266:public boolean declineMeetupOnServer(long,java.lang.String,long)
+    272:297:public boolean addInviteesToMeetupOnServer(long,java.lang.String,java.util.Set,long)

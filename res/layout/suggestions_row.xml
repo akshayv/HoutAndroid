@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:id="@+id/textView"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/textView1"
+            android:layout_alignParentLeft="true" android:layout_below="@+id/textView" android:textSize="15dp"
+            android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/textView2" android:layout_alignLeft="@+id/textView" android:layout_below="@+id/textView1"
+            android:textStyle="bold"/>
+    <TextView
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionLocation" android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true" android:layout_alignParentLeft="true"
+            android:layout_marginLeft="73dp"/>
+    <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionTime"
+            android:layout_alignBottom="@+id/textView2" android:layout_alignRight="@+id/suggestionLocation"
+            android:layout_alignLeft="@+id/suggestionLocation"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestionAddress"
+            android:layout_below="@+id/textView" android:layout_alignRight="@+id/suggestionLocation"
+            android:layout_alignLeft="@+id/suggestionLocation"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes!"
+            android:id="@+id/suggestionYes"
+            android:layout_toRightOf="@+id/textView2" android:layout_alignTop="@+id/suggestionNo"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No!"
+            android:id="@+id/suggestionNo"
+            android:layout_centerHorizontal="true" android:layout_below="@+id/textView2"
+            android:layout_marginTop="15dp" android:layout_marginLeft="50dp"/>
+</RelativeLayout>

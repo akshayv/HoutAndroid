@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:clickable="false">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Suggestion!"
+            android:layout_gravity="center" android:textStyle="bold" android:textSize="30dp" android:textColor="#ffffff"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested Location"
+            android:id="@+id/newSuggestionLocation" android:layout_gravity="left|center_vertical" android:width="320dp"
+            android:layout_marginTop="20dp"
+            android:selectAllOnFocus="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggested Time"
+            android:layout_gravity="left|center_vertical" android:layout_marginTop="20dp" android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+    <DatePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePickerSuggestionPage" android:layout_gravity="center"/>
+    <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timePickerSuggestionPage" android:layout_gravity="center"/>
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Create Suggestion!"
+            android:id="@+id/createSuggestionButton" android:layout_gravity="center" android:layout_marginTop="15dp"/>
+
+</LinearLayout>
+</ScrollView>

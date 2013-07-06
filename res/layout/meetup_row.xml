@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+    <!-- Artist Name -->
+    <TextView
+            android:id="@+id/descriptionTextDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:text="Movie Night! Iron Man!" />
+
+    <!-- Artist Name -->
+    <TextView
+            android:id="@+id/finalizedLocationText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionTextDisplay"
+            android:textColor="#FFFFFF"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:text="GV VivoCity" />
+
+    <!-- Artist Name -->
+    <TextView
+            android:id="@+id/finalizedDateText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/finalizedLocationText"
+            android:textColor="#FFFFFF"
+            android:textSize="10dip"
+            android:layout_marginTop="1dip"
+            android:text="2013-05-31 20:00:00" />
+
+    <!-- Rightend Duration -->
+    <TextView
+            android:id="@+id/dateCreated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="2013-05-21 00:00:00"
+            android:layout_marginRight="5dip"
+            android:textSize="10dip"
+            android:textColor="#10bcc9"
+            android:textStyle="bold"/>
+
+    <!-- Rightend Arrow -->
+    <ImageView android:layout_width="70dp"
+               android:layout_height="50dp"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true" android:cropToPadding="false" android:longClickable="false"/>
+
+</RelativeLayout>

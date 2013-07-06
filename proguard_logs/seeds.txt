@@ -1,0 +1,77 @@
+com.hout.HoutMobile.CreateMeetupActivity
+com.hout.HoutMobile.CreateMeetupActivity: CreateMeetupActivity()
+com.hout.HoutMobile.CreateSuggestionActivity
+com.hout.HoutMobile.CreateSuggestionActivity: CreateSuggestionActivity()
+com.hout.HoutMobile.CreateUserActivity
+com.hout.HoutMobile.CreateUserActivity: CreateUserActivity()
+com.hout.HoutMobile.Hout
+com.hout.HoutMobile.Hout: Hout()
+com.hout.HoutMobile.MeetupDetailsActivity
+com.hout.HoutMobile.MeetupDetailsActivity: MeetupDetailsActivity()
+com.hout.HoutMobile.MeetupListActivity
+com.hout.HoutMobile.MeetupListActivity: MeetupListActivity()
+com.hout.HoutMobile.NotificationsListViewActivity
+com.hout.HoutMobile.NotificationsListViewActivity: NotificationsListViewActivity()
+com.hout.HoutMobile.R$drawable: int arrow
+com.hout.HoutMobile.R$drawable: int hout
+com.hout.HoutMobile.R$drawable: int ic_launcher
+com.hout.HoutMobile.R$id: int addSuggestionButton
+com.hout.HoutMobile.R$id: int checkSuggestionsButton
+com.hout.HoutMobile.R$id: int createButton
+com.hout.HoutMobile.R$id: int createSuggestionButton
+com.hout.HoutMobile.R$id: int createUserButton
+com.hout.HoutMobile.R$id: int dateCreated
+com.hout.HoutMobile.R$id: int datePicker
+com.hout.HoutMobile.R$id: int datePickerSuggestionPage
+com.hout.HoutMobile.R$id: int descText
+com.hout.HoutMobile.R$id: int descriptionTextDisplay
+com.hout.HoutMobile.R$id: int desctextView
+com.hout.HoutMobile.R$id: int detailsFacebookCheckBox
+com.hout.HoutMobile.R$id: int detailsSuggestionsCheckBox
+com.hout.HoutMobile.R$id: int detailsTextLocation
+com.hout.HoutMobile.R$id: int detailsTextTime
+com.hout.HoutMobile.R$id: int detailsTwitterCheckBox
+com.hout.HoutMobile.R$id: int detailsViewCreated
+com.hout.HoutMobile.R$id: int detailsViewDescription
+com.hout.HoutMobile.R$id: int detailsViewLocation
+com.hout.HoutMobile.R$id: int detailsViewTime
+com.hout.HoutMobile.R$id: int fbSwitch
+com.hout.HoutMobile.R$id: int finalizedDateText
+com.hout.HoutMobile.R$id: int finalizedLocationText
+com.hout.HoutMobile.R$id: int locationText
+com.hout.HoutMobile.R$id: int meetupListView
+com.hout.HoutMobile.R$id: int newSuggestionLocation
+com.hout.HoutMobile.R$id: int newUserText
+com.hout.HoutMobile.R$id: int redirectCheckMeetupsButton
+com.hout.HoutMobile.R$id: int redirectCreateButton
+com.hout.HoutMobile.R$id: int redirectNotificationsButton
+com.hout.HoutMobile.R$id: int suggestionAddress
+com.hout.HoutMobile.R$id: int suggestionLocation
+com.hout.HoutMobile.R$id: int suggestionNo
+com.hout.HoutMobile.R$id: int suggestionTime
+com.hout.HoutMobile.R$id: int suggestionYes
+com.hout.HoutMobile.R$id: int suggestionsListView
+com.hout.HoutMobile.R$id: int suggestionsSwitch
+com.hout.HoutMobile.R$id: int textView
+com.hout.HoutMobile.R$id: int textView1
+com.hout.HoutMobile.R$id: int textView2
+com.hout.HoutMobile.R$id: int timeLabel
+com.hout.HoutMobile.R$id: int timePicker
+com.hout.HoutMobile.R$id: int timePickerSuggestionPage
+com.hout.HoutMobile.R$id: int twitterSwitch
+com.hout.HoutMobile.R$id: int userNameTextView
+com.hout.HoutMobile.R$layout: int create_meetup
+com.hout.HoutMobile.R$layout: int create_suggestion
+com.hout.HoutMobile.R$layout: int main
+com.hout.HoutMobile.R$layout: int meetup_details
+com.hout.HoutMobile.R$layout: int meetup_row
+com.hout.HoutMobile.R$layout: int meetups
+com.hout.HoutMobile.R$layout: int meetups_suggestions
+com.hout.HoutMobile.R$layout: int new_user
+com.hout.HoutMobile.R$layout: int notifications
+com.hout.HoutMobile.R$layout: int suggestions_row
+com.hout.HoutMobile.R$string: int app_name
+com.hout.HoutMobile.SuggestionListActivity
+com.hout.HoutMobile.SuggestionListActivity: SuggestionListActivity()
+com.hout.domain.entities.SuggestionStatus: com.hout.domain.entities.SuggestionStatus[] values()
+com.hout.domain.entities.SuggestionStatus: com.hout.domain.entities.SuggestionStatus valueOf(java.lang.String)

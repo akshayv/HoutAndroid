@@ -1,0 +1,281 @@
+com.hout.HoutMobile.CreateMeetupActivity -> com.hout.HoutMobile.CreateMeetupActivity:
+    com.hout.api.ClientApi api -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCreateButtonClick() -> a
+com.hout.HoutMobile.CreateMeetupActivity$1 -> com.hout.HoutMobile.a:
+    com.hout.HoutMobile.CreateMeetupActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.CreateMeetupActivity$2 -> com.hout.HoutMobile.b:
+    com.hout.HoutMobile.CreateMeetupActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.CreateSuggestionActivity -> com.hout.HoutMobile.CreateSuggestionActivity:
+    com.hout.api.ClientApi api -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCreateButtonClick(long,android.content.Context) -> a
+com.hout.HoutMobile.CreateSuggestionActivity$1 -> com.hout.HoutMobile.c:
+    com.hout.domain.entities.Meetup val$meetup -> a
+    com.hout.HoutMobile.CreateSuggestionActivity this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.CreateSuggestionActivity$2 -> com.hout.HoutMobile.d:
+    com.hout.HoutMobile.CreateSuggestionActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.CreateUserActivity -> com.hout.HoutMobile.CreateUserActivity:
+    com.hout.api.ClientApi api -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.hout.HoutMobile.CreateUserActivity$1 -> com.hout.HoutMobile.e:
+    android.content.Context val$appContext -> a
+    com.hout.HoutMobile.CreateUserActivity this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.CreateUserActivity$1$1 -> com.hout.HoutMobile.f:
+    com.hout.HoutMobile.CreateUserActivity$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.Hout -> com.hout.HoutMobile.Hout:
+    com.hout.api.ClientApi api -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.hout.HoutMobile.Hout$1 -> com.hout.HoutMobile.g:
+    com.hout.HoutMobile.Hout this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.Hout$2 -> com.hout.HoutMobile.h:
+    com.hout.HoutMobile.Hout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.Hout$3 -> com.hout.HoutMobile.i:
+    com.hout.HoutMobile.Hout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.Hout$4 -> com.hout.HoutMobile.j:
+    com.hout.HoutMobile.Hout this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.LazyAdapter -> com.hout.HoutMobile.k:
+    android.app.Activity activity -> a
+    java.util.ArrayList data -> b
+    android.view.LayoutInflater inflater -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.hout.HoutMobile.MeetupDetailsActivity -> com.hout.HoutMobile.MeetupDetailsActivity:
+    java.text.DateFormat df -> a
+    com.hout.api.ClientApi api -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.hout.HoutMobile.MeetupDetailsActivity$1 -> com.hout.HoutMobile.l:
+    com.hout.HoutMobile.MeetupDetailsActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.MeetupDetailsActivity$2 -> com.hout.HoutMobile.m:
+    com.hout.domain.entities.Meetup val$finalMeetup -> a
+    com.hout.HoutMobile.MeetupDetailsActivity this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.MeetupListActivity -> com.hout.HoutMobile.MeetupListActivity:
+    com.hout.api.ClientApi api -> a
+    java.text.DateFormat df -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.hout.HoutMobile.MeetupListActivity$1 -> com.hout.HoutMobile.n:
+    com.hout.HoutMobile.MeetupListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.MeetupListActivity$2 -> com.hout.HoutMobile.o:
+    java.util.ArrayList val$meetupList -> a
+    java.util.List val$meetups -> b
+    com.hout.HoutMobile.MeetupListActivity this$0 -> c
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.hout.HoutMobile.NotificationsListViewActivity -> com.hout.HoutMobile.NotificationsListViewActivity:
+    com.hout.api.ClientApi api -> a
+    java.util.List notifications -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onListItemClick(android.widget.ListView,android.view.View,int,long) -> onListItemClick
+com.hout.HoutMobile.NotificationsListViewActivity$1 -> com.hout.HoutMobile.p:
+    com.hout.HoutMobile.NotificationsListViewActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.NotificationsListViewActivity$StableArrayAdapter -> com.hout.HoutMobile.q:
+    com.hout.HoutMobile.NotificationsListViewActivity this$0 -> a
+com.hout.HoutMobile.SuggestionAdaptor -> com.hout.HoutMobile.r:
+    android.app.Activity activity -> b
+    java.util.ArrayList data -> c
+    android.view.LayoutInflater inflater -> d
+    android.content.Context context -> e
+    com.hout.api.ClientApi api -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+    void setRSVPYesButton(android.view.View) -> a
+    void setRSVPNoButton(android.view.View) -> b
+    void access$000(com.hout.HoutMobile.SuggestionAdaptor,android.view.View) -> a
+    android.content.Context access$100(com.hout.HoutMobile.SuggestionAdaptor) -> a
+    void access$200(com.hout.HoutMobile.SuggestionAdaptor,android.view.View) -> b
+com.hout.HoutMobile.SuggestionAdaptor$1 -> com.hout.HoutMobile.s:
+    android.widget.Button val$yesSuggestion -> a
+    long val$meetupId -> b
+    long val$suggestionId -> c
+    android.view.View val$finalVi -> d
+    android.app.AlertDialog val$alertDialog -> e
+    com.hout.HoutMobile.SuggestionAdaptor this$0 -> f
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.SuggestionAdaptor$1$1 -> com.hout.HoutMobile.t:
+    com.hout.HoutMobile.SuggestionAdaptor$1 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.SuggestionAdaptor$2 -> com.hout.HoutMobile.u:
+    android.widget.Button val$noSuggestion -> a
+    long val$meetupId -> b
+    long val$suggestionId -> c
+    android.view.View val$finalVi -> d
+    android.app.AlertDialog val$alertDialog -> e
+    com.hout.HoutMobile.SuggestionAdaptor this$0 -> f
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.SuggestionAdaptor$2$1 -> com.hout.HoutMobile.v:
+    com.hout.HoutMobile.SuggestionAdaptor$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.SuggestionAdaptor$3 -> com.hout.HoutMobile.w:
+    int[] $SwitchMap$com$hout$domain$entities$SuggestionStatus -> a
+com.hout.HoutMobile.SuggestionListActivity -> com.hout.HoutMobile.SuggestionListActivity:
+    java.text.DateFormat df -> a
+    com.hout.api.ClientApi api -> b
+    void onCreate(android.os.Bundle) -> onCreate
+com.hout.HoutMobile.SuggestionListActivity$1 -> com.hout.HoutMobile.x:
+    com.hout.domain.entities.Meetup val$meetup -> a
+    com.hout.HoutMobile.SuggestionListActivity this$0 -> b
+    void onClick(android.view.View) -> onClick
+com.hout.HoutMobile.SuggestionListActivity$2 -> com.hout.HoutMobile.y:
+    com.hout.HoutMobile.SuggestionListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.HoutMobile.SuggestionListActivity$3 -> com.hout.HoutMobile.z:
+    com.hout.HoutMobile.SuggestionListActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.hout.api.ClientApi -> com.hout.a.a:
+    void createMeetup(java.lang.String,java.lang.String,java.util.Date,boolean,boolean,boolean,java.util.List) -> a
+    java.util.List getMeetupsForTimeRange(java.util.Date,java.util.Date) -> a
+    java.util.List getNotifications() -> a
+    java.util.List getSuggestionsForMeetup(long) -> a
+    com.hout.domain.entities.User getUserDetails() -> b
+    void RSVPToSuggestion(long,long,com.hout.domain.entities.SuggestionStatus) -> a
+    void addSuggestionForMeetup(long,java.lang.String,java.util.Date) -> a
+    com.hout.domain.entities.SuggestionStatus getUserSuggestionStatus(com.hout.domain.entities.Suggestion) -> a
+    com.hout.domain.entities.Meetup getMeetupDetails(long) -> b
+    void createNewUserOnServer(java.lang.String,java.lang.Long) -> a
+    boolean isCurrentUserRegistered() -> c
+com.hout.api.impl.ClientApiImpl -> com.hout.a.a.a:
+    com.hout.integration.ServerIntegration serverIntegration -> a
+    com.hout.business.UserService userService -> b
+    void createMeetup(java.lang.String,java.lang.String,java.util.Date,boolean,boolean,boolean,java.util.List) -> a
+    java.util.List getMeetupsForTimeRange(java.util.Date,java.util.Date) -> a
+    java.util.List getNotifications() -> a
+    java.util.List getSuggestionsForMeetup(long) -> a
+    com.hout.domain.entities.User getUserDetails() -> b
+    void RSVPToSuggestion(long,long,com.hout.domain.entities.SuggestionStatus) -> a
+    void addSuggestionForMeetup(long,java.lang.String,java.util.Date) -> a
+    com.hout.domain.entities.SuggestionStatus getUserSuggestionStatus(com.hout.domain.entities.Suggestion) -> a
+    com.hout.domain.entities.Meetup getMeetupDetails(long) -> b
+    void createNewUserOnServer(java.lang.String,java.lang.Long) -> a
+    boolean isCurrentUserRegistered() -> c
+com.hout.business.UserService -> com.hout.b.a:
+    com.hout.domain.entities.User getCurrentUser() -> a
+    boolean isUserRegistered() -> b
+    void setCurrentUser(com.hout.domain.entities.User) -> a
+    void deleteSharedPreferences() -> c
+com.hout.business.impl.UserServiceImpl -> com.hout.b.a.a:
+    android.content.Context context -> a
+    com.hout.integration.ServerIntegration serverIntegration -> b
+    com.hout.domain.entities.User currentUser -> c
+    boolean isUserRegistered() -> b
+    void setCurrentUser(com.hout.domain.entities.User) -> a
+    void saveDataInPreference() -> d
+    com.hout.domain.entities.User getCurrentUser() -> a
+    void setUserIdAndApiKeyFromStorage() -> e
+    void deleteSharedPreferences() -> c
+com.hout.domain.entities.Meetup -> com.hout.c.a.a:
+    long id -> a
+    java.lang.String description -> b
+    java.util.Date createdDate -> c
+    com.hout.domain.entities.Venue finalizedLocation -> d
+    java.util.Date finalizedDate -> e
+    boolean suggestionAllowed -> f
+    boolean twitterSharing -> g
+    boolean facebookSharing -> h
+    long getId() -> a
+    void setId(long) -> a
+    java.lang.String getDescription() -> b
+    void setDescription(java.lang.String) -> a
+    java.util.Date getCreatedDate() -> c
+    void setCreatedDate(java.util.Date) -> a
+    com.hout.domain.entities.Venue getFinalizedLocation() -> d
+    void setFinalizedLocation(com.hout.domain.entities.Venue) -> a
+    java.util.Date getFinalizedDate() -> e
+    void setFinalizedDate(java.util.Date) -> b
+    boolean isSuggestionAllowed() -> f
+    void setSuggestionAllowed(boolean) -> a
+    boolean isTwitterSharing() -> g
+    void setTwitterSharing(boolean) -> b
+    boolean isFacebookSharing() -> h
+    void setFacebookSharing(boolean) -> c
+com.hout.domain.entities.Notification -> com.hout.c.a.b:
+    java.lang.String message -> a
+    java.lang.Long meetupId -> b
+    java.lang.String getMessage() -> a
+    void setMessage(java.lang.String) -> a
+    java.lang.Long getMeetupId() -> b
+    void setMeetupId(java.lang.Long) -> a
+com.hout.domain.entities.Suggestion -> com.hout.c.a.c:
+    long id -> a
+    long suggestedUserId -> b
+    com.hout.domain.entities.Venue venue -> c
+    java.util.Date date -> d
+    java.util.Set acceptedUserIds -> e
+    java.util.Set undecidedUserIds -> f
+    java.util.Set rejectedUserIds -> g
+    long getId() -> a
+    void setId(long) -> a
+    void setSuggestedUserId(long) -> b
+    com.hout.domain.entities.Venue getVenue() -> b
+    void setVenue(com.hout.domain.entities.Venue) -> a
+    java.util.Date getDate() -> c
+    void setDate(java.util.Date) -> a
+    java.util.Set getAcceptedUserIds() -> d
+    java.util.Set getUndecidedUserIds() -> e
+    java.util.Set getRejectedUserIds() -> f
+com.hout.domain.entities.SuggestionStatus -> com.hout.c.a.d:
+    com.hout.domain.entities.SuggestionStatus YES -> a
+    com.hout.domain.entities.SuggestionStatus NO -> b
+    com.hout.domain.entities.SuggestionStatus UNDECIDED -> c
+    com.hout.domain.entities.SuggestionStatus[] $VALUES -> d
+    com.hout.domain.entities.SuggestionStatus[] values() -> values
+    com.hout.domain.entities.SuggestionStatus valueOf(java.lang.String) -> valueOf
+com.hout.domain.entities.User -> com.hout.c.a.e:
+    long userId -> a
+    java.lang.String apiKey -> b
+    java.lang.String name -> c
+    long contactNumber -> d
+    long getUserId() -> a
+    void setUserId(long) -> a
+    java.lang.String getApiKey() -> b
+    void setApiKey(java.lang.String) -> a
+    java.lang.String getName() -> c
+    void setName(java.lang.String) -> b
+    void setContactNumber(long) -> b
+com.hout.domain.entities.Venue -> com.hout.c.a.f:
+    java.lang.String address -> a
+    java.lang.String location -> b
+    java.lang.String getAddress() -> a
+    void setAddress(java.lang.String) -> a
+    java.lang.String getLocation() -> b
+    void setLocation(java.lang.String) -> b
+com.hout.integration.ServerIntegration -> com.hout.d.a:
+    boolean createMeetupOnServer(long,java.lang.String,java.lang.String,java.lang.String,java.util.Date,boolean,boolean,boolean,java.util.List) -> a
+    java.util.List getMeetupsForTimeRange(long,java.lang.String,java.util.Date,java.util.Date) -> a
+    java.util.List getNotifications(long,java.lang.String) -> a
+    java.util.List getSuggestionsForMeetup(long,java.lang.String,long) -> a
+    com.hout.domain.entities.User getUserDetails(long,java.lang.String) -> b
+    boolean addSuggestionForMeetupOnServer(long,java.lang.String,long,java.lang.String,java.util.Date) -> a
+    boolean RSVPToSuggestionOnServer(long,java.lang.String,long,long,com.hout.domain.entities.SuggestionStatus) -> a
+    com.hout.domain.entities.Meetup getMeetupDetails(long,java.lang.String,long) -> b
+    com.hout.domain.entities.User createUserOnServer(java.lang.String,java.lang.Long) -> a
+com.hout.integration.impl.ServerIntegrationImpl -> com.hout.d.a.a:
+    java.lang.String baseUrl -> a
+    java.text.DateFormat df -> b
+    boolean createMeetupOnServer(long,java.lang.String,java.lang.String,java.lang.String,java.util.Date,boolean,boolean,boolean,java.util.List) -> a
+    java.util.List getMeetupsForTimeRange(long,java.lang.String,java.util.Date,java.util.Date) -> a
+    java.util.List getNotifications(long,java.lang.String) -> a
+    java.util.List getSuggestionsForMeetup(long,java.lang.String,long) -> a
+    com.hout.domain.entities.User getUserDetails(long,java.lang.String) -> b
+    boolean addSuggestionForMeetupOnServer(long,java.lang.String,long,java.lang.String,java.util.Date) -> a
+    boolean RSVPToSuggestionOnServer(long,java.lang.String,long,long,com.hout.domain.entities.SuggestionStatus) -> a
+    com.hout.domain.entities.Meetup getMeetupDetails(long,java.lang.String,long) -> b
+    com.hout.domain.entities.User createUserOnServer(java.lang.String,java.lang.Long) -> a
+    java.lang.String addParameters(java.lang.String,java.util.List) -> a
+    org.apache.http.HttpResponse getResponse(java.lang.String) -> a

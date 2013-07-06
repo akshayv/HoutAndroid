@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:id="@+id/detailsViewDescription"
+            android:width="400dp"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginTop="37dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:text="Description"
+            android:id="@+id/desctextView" android:layout_alignLeft="@+id/detailsViewDescription"
+            android:height="40dp" android:textSize="20dp" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalized Location"
+            android:id="@+id/detailsTextLocation" android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detailsViewDescription" android:textSize="20dp" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsViewLocation" android:layout_alignLeft="@+id/detailsViewDescription"
+            android:layout_below="@+id/detailsTextLocation" android:layout_alignRight="@+id/detailsViewDescription"
+            android:height="29dp" android:width="400dp" android:layout_marginTop="15dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finalized Time"
+            android:id="@+id/detailsTextTime"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/detailsViewDescription" android:layout_below="@+id/detailsViewLocation"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsViewTime"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="9dp"
+            android:layout_below="@+id/detailsTextTime" android:layout_alignRight="@+id/detailsViewDescription"
+            android:height="29dp" android:width="400dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2013-05-15"
+            android:id="@+id/detailsViewCreated"
+            android:textColor="#00FFFF" android:textIsSelectable="false" android:textStyle="bold"
+            android:layout_alignRight="@+id/detailsViewDescription" android:layout_alignTop="@+id/desctextView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggestions"
+            android:id="@+id/checkSuggestionsButton" android:layout_alignLeft="@+id/detailsViewDescription"
+            android:layout_alignParentBottom="true" android:layout_alignRight="@+id/detailsViewDescription"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suggestions"
+            android:id="@+id/detailsSuggestionsCheckBox"
+            android:checked="false"
+            android:layout_toRightOf="@+id/desctextView" android:layout_below="@+id/detailsViewTime"
+            android:layout_marginTop="15dp" android:enabled="false"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:id="@+id/detailsFacebookCheckBox"
+            android:checked="false"
+            android:layout_toRightOf="@+id/desctextView" android:layout_below="@+id/detailsSuggestionsCheckBox"
+            android:enabled="false"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twitter"
+            android:id="@+id/detailsTwitterCheckBox"
+            android:checked="false" android:layout_toRightOf="@+id/desctextView"
+            android:layout_below="@+id/detailsFacebookCheckBox"
+            android:enabled="false"/>
+</RelativeLayout>

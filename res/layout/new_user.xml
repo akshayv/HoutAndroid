@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:text="New User On Hout!"
+            android:layout_gravity="left|center_vertical" android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp" android:textStyle="bold"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:text="Wecome!"
+            android:layout_gravity="left|center_vertical" android:textStyle="bold" android:textSize="20dp"
+            android:textIsSelectable="false" android:phoneNumber="false" android:gravity="center_vertical|center_horizontal"/>
+    <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:text="Your Name Here!"
+            android:id="@+id/newUserText" android:layout_gravity="left|center_vertical" android:selectAllOnFocus="true"
+            android:layout_marginTop="50dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="Create User!"
+            android:id="@+id/createUserButton" android:layout_gravity="center" android:layout_marginTop="130dp"/>
+</LinearLayout>
