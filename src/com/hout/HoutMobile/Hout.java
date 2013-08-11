@@ -41,9 +41,9 @@ public class Hout extends Activity {
         TextView userName = (TextView) findViewById(R.id.userNameTextView);
         userName.setText(user.getName());
 
-        final Button createMeetupsButton = (Button) findViewById(R.id.redirectCreateButton);
-        final Button checkMeetupsButton = (Button) findViewById(R.id.redirectCheckMeetupsButton);
-        final Button checkNotificationsButton = (Button) findViewById(R.id.redirectNotificationsButton);
+        final ImageButton createMeetupsButton = (ImageButton) findViewById(R.id.redirectCreateButton);
+        final ImageButton checkMeetupsButton = (ImageButton) findViewById(R.id.redirectCheckMeetupsButton);
+        final ImageButton checkNotificationsButton = (ImageButton) findViewById(R.id.redirectNotificationsButton);
         checkMeetupsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent checkMeetupsActivity = new Intent(getApplicationContext(), MeetupListActivity.class);

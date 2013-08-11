@@ -1,12 +1,8 @@
 package com.hout.integration.impl;
 
 import android.os.StrictMode;
-import com.hout.domain.entities.Meetup;
-import com.hout.domain.entities.Notification;
-import com.hout.domain.entities.SuggestionStatus;
-import com.hout.domain.entities.User;
+import com.hout.domain.entities.*;
 import com.hout.integration.ServerIntegration;
-import com.hout.domain.entities.Suggestion;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
@@ -26,10 +22,7 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class ServerIntegrationImpl implements ServerIntegration, Serializable {
 
@@ -354,7 +347,7 @@ public class ServerIntegrationImpl implements ServerIntegration, Serializable {
     }
 
     @Override
-    public User createUserOnServer(String userName, Long contactNumber) throws Exception {
+    public User createUserOnServer(String userName, String contactNumber) throws Exception {
 
         String url = baseUrl + "createUser";
 
@@ -381,6 +374,41 @@ public class ServerIntegrationImpl implements ServerIntegration, Serializable {
            response.getEntity().getContent().close();
            throw new IOException(statusLine.getReasonPhrase());
         }
+    }
+
+    @Override
+    public Set<UserMin> getRegisteredUsers(long userId, String apiKey, Set<String> contactNumbers) throws Exception {
+        String url = baseUrl + "getUsers";
+
+        List<NameValuePair> parameterList = new ArrayList<NameValuePair>();
+        parameterList.add(new BasicNameValuePair("userId", String.valueOf(userId)));
+        parameterList.add(new BasicNameValuePair("apiKey", apiKey));
+
+        url = addParameters(url, parameterList);
+
+        for (String contactNumber : contactNumbers) {
+            url += "&contactNumber=" + contactNumber;
+        }
+
+        HttpResponse response = getResponse(url);
+        StatusLine statusLine = response.getStatusLine();
+        Set<UserMin> users = new HashSet<UserMin>();
+        if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            response.getEntity().writeTo(out);
+            out.close();
+            String result = out.toString();
+            JSONObject ob = new JSONObject(result);
+                JSONArray ar = ob.getJSONArray("users");
+            for (int n = 0; n < ar.length(); n++) {
+                JSONObject object = ar.getJSONObject(n);
+                users.add(new UserMin(object));
+            }
+        } else {
+            response.getEntity().getContent().close();
+            throw new IOException(statusLine.getReasonPhrase());
+        }
+        return users;
     }
 
     private String addParameters(String url, List<NameValuePair> parameterList) {

@@ -20,7 +20,7 @@ public class ClientApiMock implements ClientApi, Serializable {
 
         user.setName("Akshay");
         user.setUserId(1L);
-        user.setContactNumber(46720309984L);
+        user.setContactNumber("46720309984");
         user.setApiKey("akshay");
 
         Meetup meetup = new Meetup(1, "Movie Night! Iron Man 3", new Date(), new Venue("GV Vivo", "Vivo City Mall"),
@@ -159,11 +159,19 @@ public class ClientApiMock implements ClientApi, Serializable {
     }
 
     @Override
-    public void createNewUserOnServer(String text, Long contactNumber) throws Exception {
+    public void createNewUserOnServer(String text, String contactNumber) throws Exception {
     }
 
     @Override
     public boolean isCurrentUserRegistered() {
         return true;
+    }
+
+    @Override
+    public List<UserMin> getRegisteredUsers(Set<String> contactNumbers) throws Exception {
+        List<UserMin> users = new ArrayList<UserMin>();
+        users.add(new UserMin(1L, "Akshay Viswanathan", "+46720309984"));
+        users.add(new UserMin(2L, "Akshay V (Singapore)", "+6585525776"));
+        return users;
     }
 }

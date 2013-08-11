@@ -4,17 +4,12 @@ import android.content.Context;
 import com.hout.api.ClientApi;
 import com.hout.business.UserService;
 import com.hout.business.impl.UserServiceImpl;
-import com.hout.domain.entities.Meetup;
-import com.hout.domain.entities.Notification;
-import com.hout.domain.entities.SuggestionStatus;
-import com.hout.domain.entities.User;
+import com.hout.domain.entities.*;
 import com.hout.integration.ServerIntegration;
-import com.hout.domain.entities.Suggestion;
 import com.hout.integration.impl.ServerIntegrationImpl;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class ClientApiImpl implements ClientApi,Serializable {
 
@@ -98,14 +93,28 @@ public class ClientApiImpl implements ClientApi,Serializable {
     }
 
     @Override
-    public void createNewUserOnServer(String userName, Long contactNumber) throws Exception {
+    public void createNewUserOnServer(String userName, String contactNumber) throws Exception {
         User user = serverIntegration.createUserOnServer(userName, contactNumber);
         userService.setCurrentUser(user);
     }
 
     @Override
     public boolean isCurrentUserRegistered() {
-        userService.deleteSharedPreferences();
+//        userService.deleteSharedPreferences();
         return userService.isUserRegistered();
+    }
+
+    public List<UserMin> getRegisteredUsers(Set<String> contactNumbers) throws Exception {
+        User currentUser = userService.getCurrentUser();
+        Set<UserMin> registeredUsers = serverIntegration
+                .getRegisteredUsers(currentUser.getUserId(), currentUser.getApiKey(), contactNumbers);
+        List<UserMin> registeredUsersSorted = new ArrayList<UserMin>(registeredUsers);
+        Collections.sort(registeredUsersSorted, new Comparator<UserMin>() {
+            @Override
+            public int compare(UserMin user, UserMin user2) {
+                return user.getName().compareTo(user2.getName());
+            }
+        });
+        return registeredUsersSorted;
     }
 }

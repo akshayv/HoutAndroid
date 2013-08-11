@@ -2,6 +2,7 @@ package com.hout.integration;
 
 import com.hout.domain.entities.*;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -35,5 +36,8 @@ public interface ServerIntegration {
     public Meetup getMeetupDetails(long userId, String apiKey, long meetupId) throws Exception;
 
 
-    public User createUserOnServer(String userName, Long contactNumber) throws Exception;
+    public User createUserOnServer(String userName, String contactNumber) throws Exception;
+
+    public Set<UserMin> getRegisteredUsers(long userId, String apiKey, Set<String> contactNumbers) throws
+            Exception;
 }

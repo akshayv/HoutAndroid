@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.hout.api.ClientApi;
 import com.hout.api.impl.ClientApiImpl;
+import com.hout.api.mock.ClientApiMock;
 
 public class CreateUserActivity extends Activity {
 
@@ -23,13 +24,14 @@ public class CreateUserActivity extends Activity {
         super.onCreate(savedInstanceState);
         Bundle extras = getIntent().getExtras();
         api = extras == null || extras.getSerializable("api") == null ?
-                new ClientApiImpl(this) : (ClientApi)extras.getSerializable("api");
+                /*new ClientApiImpl(this)*/new ClientApiMock() : (ClientApi)extras.getSerializable("api");
 
         boolean result = api.isCurrentUserRegistered();
         if(result) {
             Intent houtMainActivity = new Intent(getApplicationContext(), Hout.class);
             houtMainActivity.putExtra("api", api);
             startActivity(houtMainActivity);
+            finish();
         }
 
         setContentView(R.layout.new_user);
@@ -40,11 +42,11 @@ public class CreateUserActivity extends Activity {
         createUserButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
-                    //TelephonyManager tMgr =(TelephonyManager)getApplicationContext()
-                           // .getSystemService(Context.TELEPHONY_SERVICE);
-                    //String mPhoneNumber = tMgr.getLine1Number();
+                    TelephonyManager tMgr =(TelephonyManager)getApplicationContext()
+                           .getSystemService(Context.TELEPHONY_SERVICE);
+                    String mPhoneNumber = tMgr.getLine1Number();
                     api.createNewUserOnServer(((EditText) findViewById(R.id.newUserText)).getText().toString(),
-                            467620309796L);
+                            mPhoneNumber);
                 } catch (Exception e) {
                     AlertDialog alertDialog = new AlertDialog.Builder(appContext).create();
                     alertDialog.setTitle("Error");
@@ -60,6 +62,7 @@ public class CreateUserActivity extends Activity {
                 Intent houtMainActivity = new Intent(getApplicationContext(), Hout.class);
                 houtMainActivity.putExtra("api", api);
                 startActivity(houtMainActivity);
+                finish();
             }
         });
     }

@@ -1,14 +1,11 @@
 package com.hout.api;
 
-import com.hout.domain.entities.Meetup;
-import com.hout.domain.entities.Notification;
-import com.hout.domain.entities.SuggestionStatus;
-import com.hout.domain.entities.User;
-import com.hout.domain.entities.Suggestion;
+import com.hout.domain.entities.*;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 public interface ClientApi extends Serializable {
 
@@ -33,7 +30,9 @@ public interface ClientApi extends Serializable {
 
     public Meetup getMeetupDetails(long meetupId) throws Exception;
 
-    public void createNewUserOnServer(String text, Long contactNumber) throws Exception;
+    public void createNewUserOnServer(String text, String contactNumber) throws Exception;
 
     public boolean isCurrentUserRegistered();
+
+    public List<UserMin> getRegisteredUsers(Set<String> contactNumbers) throws Exception;
 }
